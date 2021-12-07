@@ -4,7 +4,6 @@ import { gsap } from "gsap";
 import "../index.css";
 import logo from "../assets/SVG/logo.svg";
 
-
 const NavBar = ({ grabActiveLink }) => {
   const [showLinks, setShowLinks] = useState(false);
   const [name, setName] = useState("");
