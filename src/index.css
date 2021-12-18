@@ -16,6 +16,12 @@ Global Styles
   --transition: all 0.3s ease-in;
 }
 
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
 /* 
 =============
 Animation
@@ -295,7 +301,65 @@ Battle
   opacity: 1;
 }
 
-.shop-icon {
+/* 
+=============
+Footer
+==========
+ */
+
+.more {
+  min-height: 100vh;
+  /* width: 100%; */
+  background: url(./assets/images/contact.png) center center/cover;
+  position: relative;
+}
+
+.footer-logo img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  height: 30%;
+  margin: 2rem auto;
+}
+
+.footer-links-container {
+  background: #01163d;
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+}
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 15rem;
+  width: auto;
+  padding: 1rem 0;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.footer-links a {
+  font-family: "Geo", sans-serif;
+  opacity: 0.5;
+  transition: opacity 0.3s ease-in;
+  color: #fff;
+}
+
+.footer-links a:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.newsletter-container {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-65%);
+  right: 1%;
 }
 
 @media screen and (min-width: 800px) {
@@ -341,16 +405,52 @@ Battle
     z-index: -9;
   }
 
-  /* .active::before {
+  /* content: "";
+    background: turquoise;
+    position: absolute;
+    width: 5rem;
+    height: 6%;
+    bottom: 7%;
+    left: 0; */
+
+  .active::before {
     content: "";
     background: turquoise;
     position: absolute;
-    width: 15.4rem;
-    height: 25%;
-    bottom: -140%;
-    left: auto;
+    width: 5rem;
+    height: 6%;
+    bottom: 7%;
+    left: 0;
     z-index: -9;
     transition: var(--transition);
     clip-path: polygon(0% 0%, 100% 0%, 100% 30%, 70% 100%, 30% 100%, 0% 30%);
-  } */
+  }
+  .footer-links-container {
+    width: auto;
+    bottom: 11%;
+    left: 0.1%;
+  }
+  .footer-links {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 42rem;
+    height: 4rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 0;
+  }
+  .newsletter-container {
+    bottom: 16%;
+    left: 50%;
+    transform: translateX(-40%);
+    right: 1%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .newsletter-container {
+    bottom: 5%;
+    right: 5%;
+    left: auto;
+  }
 }
