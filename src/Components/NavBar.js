@@ -11,7 +11,7 @@ const NavBar = ({ grabActiveLink }) => {
 
   const hoverTo = (elem) => {
     gsap.to(containerRef.current, { x: elem.offsetLeft, opacity: 0.5 });
-    containerRef.current.style.width = elem.style.offsetWidth + "px";
+    containerRef.current.style.width = elem.offsetWidth + "px";
   };
 
   const handleLeave = (elem) => {
