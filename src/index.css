@@ -276,7 +276,8 @@ Battle
   left: 28%;
   bottom: 10%;
   transform: translate(-20%, -10%);
-  width: 50rem;
+
+  /* width: 50rem; */
   height: auto;
   display: flex;
   align-items: flex-end;
@@ -314,7 +315,7 @@ Battle
 }
 
 .marketplace-content svg {
-  margin-right: 1.8rem;
+  margin-right: 0.5rem;
 }
 .marketplace-items {
   display: flex;
@@ -322,7 +323,7 @@ Battle
   align-items: center;
   color: white;
   font-weight: 800;
-  font-size: 2.2rem;
+  font-size: 1rem;
   opacity: 0.5;
   position: absolute;
   top: 52%;
@@ -607,7 +608,7 @@ Footer
     content: "";
     background: turquoise;
     position: absolute;
-    width: 5rem;
+    width: 10rem;
     height: 6%;
     bottom: 7%;
     left: 0;
@@ -727,5 +728,11 @@ Footer
     opacity: 0.5;
     transition: opacity 0.3s ease-in;
     left: 10%;
+  }
+  .marketplace-items {
+    font-size: 2.2rem;
+  }
+  .marketplace-content svg {
+    margin-right: 1.8rem;
   }
 }
