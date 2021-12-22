@@ -6,13 +6,18 @@ import Earn from "./Components/Earn";
 import Battle from "./Components/Battle";
 import Marketplace from "./Components/Marketplace";
 import More from "./Components/More";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
 
 function App() {
+  const timeline = gsap.timeline()
+    gsap.registerPlugin(ScrollTrigger);
+    
   return (
     <>
       <NavBar />
       <Home />
-      <About />
+      <About timeline={timeline}/>
       <Earn />
       <Battle />
       <Marketplace />

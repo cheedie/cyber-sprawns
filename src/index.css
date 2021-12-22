@@ -170,6 +170,40 @@ About
   position: relative;
 }
 
+.combineCircuits {
+  position: relative;
+}
+
+.svg_circuit_1 {
+  margin-top: -6rem;
+}
+
+.svg_circuit_3 {
+  margin-top: -20rem;
+}
+
+.set1 {
+  padding-top: 10rem;
+  -webkit-filter: drop-shadow(0 0 3px #fff) drop-shadow(0 0 10px #f9f)
+    drop-shadow(0 0 15px #f9f) drop-shadow(0 0 20px #f9f);
+  filter: drop-shadow(0 0 3px white) drop-shadow(0 0 10px #ff99ff)
+    drop-shadow(0 0 15px #ff99ff) drop-shadow(0 0 20px #ff99ff);
+}
+
+.meshCircuit3 {
+  top: 7rem;
+}
+
+.meshCircuit,
+.meshCircuit1,
+.meshCircuit3 {
+  stroke-width: 6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #f9f;
+  position: relative;
+}
+
 /* 
 =============
 Battle
