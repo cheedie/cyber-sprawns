@@ -436,6 +436,138 @@ Footer
   color: white;
 }
 
+.animals span {
+  color: #cf77f1;
+  width: 35rem;
+  text-align: left;
+  line-height: 1.7;
+  font-size: 2rem;
+}
+.animal1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 60vw;
+  position: absolute;
+  top: 17%;
+  left: 0%;
+}
+
+.animal1 img {
+  width: 25vw;
+}
+
+.animal2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 28%;
+  right: 7%;
+}
+
+.animal2 img {
+  width: 25vw;
+}
+
+.animal2 span {
+  order: 1;
+}
+
+.animal2 img {
+  order: 2;
+}
+
+.animal3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 44%;
+  left: 1%;
+}
+
+.animal3 img {
+  width: 95%;
+}
+
+/* .animal1 {
+    top: 13%;
+  }
+  
+  .animal2 {
+    top: 25%;
+  } */
+
+.playToEarn {
+  margin-top: 3.2rem;
+}
+.cta {
+  position: absolute;
+  bottom: 23%;
+  left: 30%;
+}
+
+.cta h2 {
+  color: #e29aff;
+  font-size: 3.5rem;
+  text-align: left;
+  /* margin-bottom: 5rem; */
+}
+
+.cta p {
+  color: #cc64f5;
+  font-size: 1.2rem;
+  text-align: left;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+.about-button {
+  position: absolute;
+  top: 80.8%;
+  right: 13%;
+  width: 30%;
+}
+
+.about-button2 {
+  position: absolute;
+  top: 83%;
+  right: 13%;
+  width: 30%;
+}
+
+.aboutBtn {
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s ease-in;
+}
+.aboutBtn:hover {
+  transform: translateY(-2px);
+}
+
+.aboutBtn__group {
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+  font-weight: bolder;
+  font-size: 1.8rem;
+  opacity: 0.5;
+  transition: opacity 0.3s ease-in;
+  left: 10%;
+}
+
+.aboutBtn__group:hover {
+  opacity: 1;
+}
+
+.aboutBtn__icon svg {
+  margin-right: 3rem;
+}
 @media screen and (min-width: 800px) {
   .navbar-container {
     display: flex;
@@ -479,14 +611,6 @@ Footer
     z-index: -9;
   }
 
-  /* content: "";
-    background: turquoise;
-    position: absolute;
-    width: 5rem;
-    height: 6%;
-    bottom: 7%;
-    left: 0; */
-
   .active::before {
     content: "";
     background: turquoise;
@@ -519,6 +643,18 @@ Footer
     transform: translateX(-40%);
     right: 1%;
   }
+  .cta {
+    bottom: 21%;
+    left: 30%;
+  }
+
+  .cta h2 {
+    margin-bottom: 2.5rem;
+  }
+
+  .cta p {
+    width: 75%;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -548,5 +684,15 @@ Footer
     right: -44%;
     bottom: 1%;
     width: 88%;
+  }
+  .animals span {
+    font-size: 1rem;
+  }
+  .about-button {
+    top: 80.6%;
+  }
+
+  .about-button2 {
+    top: 82.8%;
   }
 }

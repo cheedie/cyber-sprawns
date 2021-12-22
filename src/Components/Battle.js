@@ -51,7 +51,7 @@ const Battle = () => {
         scrub: true,
       },
     });
-  }, []);
+  }, [tl]);
 
   return (
     <main id="battle">

@@ -13,23 +13,23 @@ const Home = () => {
 
   const homeRef = useRef(0);
 
-  // useLayoutEffect(() => {
-  //   function handleScroll() {
-  //     if (window.pageYOffset < 700) {
-  //       setOffSetX(window.pageYOffset);
-  //       setOffSetXY(window.pageYOffset + 5);
-  //       setOffSetY(window.pageYOffset + 100);
-  //       homeRef.current.style.transform = `translateY(${
-  //         window.pageYOffset * 0.1
-  //       }px)`;
-  //     }
-  //   }
-  //   handleScroll();
-  //   window.addEventListener("scroll", handleScroll);
-  //   return () => {
-  //     window.removeEventListener("scroll", handleScroll);
-  //   };
-  // }, []);
+  useLayoutEffect(() => {
+    function handleScroll() {
+      if (window.pageYOffset < 700) {
+        setOffSetX(window.pageYOffset);
+        setOffSetXY(window.pageYOffset + 5);
+        setOffSetY(window.pageYOffset + 100);
+        homeRef.current.style.transform = `translateY(${
+          window.pageYOffset * 0.1
+        }px)`;
+      }
+    }
+    handleScroll();
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   useLayoutEffect(() => {
     function mouseScroll(e) {
@@ -66,16 +66,25 @@ const Home = () => {
         src={landing_slice2}
         alt="landing_slice"
         className="home-container-img home-container"
+        style={{
+          transform: `translateY(${offSetX * -0.2}px)`,
+        }}
       />
       <img
         src={landing_slice1}
         alt="landing_slice"
         className="home-container-img home-container"
+        style={{
+          transform: `translateY(${offSetY * -0.4}px)`,
+        }}
       />
       <img
         src={landing_slice4}
         alt="landing_slice"
         className="home-container-img"
+        style={{
+          transform: `translateY(${offSetXY * -0.6}px)`,
+        }}
       />
       <div>
         <img src={logo} className="logo" alt="header-logo" />
