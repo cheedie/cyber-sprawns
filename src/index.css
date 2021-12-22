@@ -309,7 +309,6 @@ Footer
 
 .more {
   min-height: 100vh;
-  /* width: 100%; */
   background: url(./assets/images/contact.png) center center/cover;
   position: relative;
 }
@@ -360,6 +359,47 @@ Footer
   left: 50%;
   transform: translateX(-65%);
   right: 1%;
+}
+
+.newsletter-content {
+  width: 50rem;
+  position: relative;
+  overflow-x: hidden;
+}
+.newsletter-content h3 {
+  position: absolute;
+  top: 0.85rem;
+  right: 42%;
+  color: #fff;
+}
+.newsletter-content form {
+  position: absolute;
+  top: 5rem;
+  right: -8%;
+}
+
+.newsletter-content input {
+  height: 5rem;
+  width: 20rem;
+  opacity: 0.6;
+  outline: none;
+  border: none;
+  background: transparent;
+  font-size: 2.4rem;
+  font-family: "Geo", sans-serif;
+  z-index: 2;
+}
+
+.newsletter-content input::placeholder {
+  color: white;
+}
+
+.newsletter-content input::selection {
+  background: #85e8fa;
+}
+
+.newsletter-content input[type="text"] {
+  color: white;
 }
 
 @media screen and (min-width: 800px) {
@@ -449,8 +489,30 @@ Footer
 
 @media screen and (min-width: 1200px) {
   .newsletter-container {
-    bottom: 5%;
-    right: 5%;
+    bottom: -3%;
+    right: -7%;
     left: auto;
+  }
+  .newsletter-content {
+    width: 25rem;
+  }
+  .newsletter-content input {
+    width: 22rem;
+  }
+  .newsletter-content form {
+    top: 1.5rem;
+  }
+
+  .newsletter-content input::placeholder {
+    font-size: 2rem;
+  }
+  .newsletter-content input[type="text"] {
+    font-size: 2rem;
+  }
+  .newsletter-btn {
+    position: absolute;
+    right: -44%;
+    bottom: 1%;
+    width: 88%;
   }
 }

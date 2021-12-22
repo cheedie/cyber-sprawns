@@ -36,7 +36,7 @@ const More = () => {
         </ul>
       </div>
       <div className="newsletter-container">
-        <div>
+        <div className="newsletter-content">
           <h3>Newsletter</h3>
           <form action="">
             <input type="text" placeholder="Email Address" />
