@@ -441,15 +441,15 @@ Footer
   width: 35rem;
   text-align: left;
   line-height: 1.7;
-  font-size: 2rem;
+  font-size: 1rem;
 }
 .animal1 {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 60vw;
+  width: 55vw;
   position: absolute;
-  top: 17%;
+  top: 13%;
   left: 0%;
 }
 
@@ -462,7 +462,7 @@ Footer
   justify-content: space-between;
   align-items: center;
   position: absolute;
-  top: 28%;
+  top: 25%;
   right: 7%;
 }
 
@@ -491,36 +491,28 @@ Footer
   width: 95%;
 }
 
-/* .animal1 {
-    top: 13%;
-  }
-  
-  .animal2 {
-    top: 25%;
-  } */
-
 .playToEarn {
-  margin-top: 3.2rem;
+  margin-top: 12rem;
 }
 .cta {
   position: absolute;
-  bottom: 23%;
-  left: 30%;
+  bottom: 20%;
+  left: 25%;
 }
 
 .cta h2 {
   color: #e29aff;
-  font-size: 3.5rem;
+  font-size: 1rem;
   text-align: left;
-  /* margin-bottom: 5rem; */
+  margin-bottom: 1.5rem;
 }
 
 .cta p {
   color: #cc64f5;
-  font-size: 1.2rem;
-  text-align: left;
+  font-size: 0.45rem;
+  /* text-align: left; */
   line-height: 1.5;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .about-button {
@@ -555,7 +547,7 @@ Footer
   align-items: center;
   color: #fff;
   font-weight: bolder;
-  font-size: 1.8rem;
+  font-size: 0.85rem;
   opacity: 0.5;
   transition: opacity 0.3s ease-in;
   left: 10%;
@@ -694,5 +686,46 @@ Footer
 
   .about-button2 {
     top: 82.8%;
+  }
+  .cta {
+    bottom: 23%;
+  }
+  .animal1 {
+    width: 60vw;
+    top: 17%;
+  }
+  .animals span {
+    font-size: 1.8rem;
+  }
+  .animal2 {
+    top: 28%;
+  }
+  .cta {
+    bottom: 20%;
+  }
+  .cta h2 {
+    font-size: 3.5rem;
+    margin-bottom: 0;
+  }
+  .cta p {
+    color: #cc64f5;
+    font-size: 1.2rem;
+    text-align: left;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+  }
+  .aboutBtn__group {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 1.8rem;
+    opacity: 0.5;
+    transition: opacity 0.3s ease-in;
+    left: 10%;
   }
 }
