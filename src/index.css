@@ -91,14 +91,15 @@ NavBar
   top: 4rem;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   display: block;
   transition: var(--transition);
-  background: rgba(0, 0, 0, 0.5);
+  z-index: 50;
+  background: #272829;
 }
 
 .nav-link {
-  color: black;
+  color: white;
   cursor: pointer;
   font-family: "Geo", sans-serif;
   font-size: 1.2rem;
@@ -439,16 +440,16 @@ Footer
 
 .animals span {
   color: #cf77f1;
-  width: 35rem;
+
   text-align: left;
   line-height: 1.7;
-  font-size: 1rem;
+  font-size: 0.85rem;
 }
 .animal1 {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 55vw;
+  /* width: 55vw; */
   position: absolute;
   top: 13%;
   left: 0%;
@@ -464,7 +465,9 @@ Footer
   align-items: center;
   position: absolute;
   top: 25%;
+
   right: 7%;
+  /* width: 80vw; */
 }
 
 .animal2 img {
@@ -473,6 +476,7 @@ Footer
 
 .animal2 span {
   order: 1;
+  margin-top: 2rem;
 }
 
 .animal2 img {
@@ -561,6 +565,7 @@ Footer
 .aboutBtn__icon svg {
   margin-right: 3rem;
 }
+
 @media screen and (min-width: 800px) {
   .navbar-container {
     display: flex;
@@ -587,7 +592,6 @@ Footer
     height: 4rem;
   }
   .nav-link {
-    color: white;
     cursor: pointer;
     z-index: 10;
     position: relative;
@@ -696,8 +700,10 @@ Footer
     top: 17%;
   }
   .animals span {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
+    width: 35rem;
   }
+
   .animal2 {
     top: 28%;
   }
